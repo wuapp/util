@@ -43,9 +43,6 @@ func JoinEx(array interface{}, start, sep, end, quotes string) string {
 				buf.WriteString(sep)
 			}
 		}
-		for _, a := range arrInterface {
-			buf.WriteString(ToString(a, quotes))
-		}
 	}
 
 	//todo: other types
